@@ -89,4 +89,27 @@ body {
   color: #a5a5a5;
   font-size: 14px;
 }
+
+.add__btn {
+  width: 100%;
+}
+
+.add__btn .plus {
+  position: fixed;
+  padding: 10px 20px;
+  background-color: #6eeb9d;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+  border-radius: 50%;
+  right: 47%;
+  font-family: auto;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.add__btn .plus:hover {
+  background-color: #2ea55b;
+}
 /*# sourceMappingURL=index.css.map */
