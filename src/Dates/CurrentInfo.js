@@ -1,5 +1,3 @@
-import { getByPlaceholderText } from "@testing-library/react";
-
 const CurrentInfo = () => {
     return (
         <div className="date__area">
@@ -8,7 +6,7 @@ const CurrentInfo = () => {
                 <div className="month_year">
                     <span style={{ color: '#4d4c4c' }}>{ getmonth() }</span>
                     <br />
-                    { getYear() }
+                    <span>{ getYear() }</span>
                 </div>
             </div>
             <div class="day">{ getDay() }</div>
@@ -18,7 +16,7 @@ const CurrentInfo = () => {
 
 const getDay = () => {
     let objToday = new Date();
-	let weekday = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+	let weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 	let dayOfWeek = weekday[objToday.getDay()];
     return dayOfWeek;
 }
@@ -31,7 +29,7 @@ const getDate = () => {
 
 const getmonth = () => {
     let objToday = new Date();
-	let months = new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec');
+	let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 	let curMonth = months[objToday.getMonth()];
     return curMonth;
 }
