@@ -21,7 +21,7 @@ const Todo = () => {
             {isLoading && <div className="loading-blk">Loading...</div>}
 
             {items && items.map((item) => (
-                <TodoCard id={ item.id } content={ item.msg } state={ item.completed }  />
+                <TodoCard id={ item.id } content={ item.msg } status={ item.completed }  />
             ))}
         </div>
     );

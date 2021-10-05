@@ -6,23 +6,23 @@ const tasks = [
     },
     {
         id: 2,
-        msg: "Get Grocerry",
-        completed: false
+        msg: "Complete CS50 DA-1",
+        completed: true
     },
     {
         id: 3,
-        msg: "Get Grocerry",
+        msg: "Study DSA",
         completed: false
     },
     {
         id: 4,
-        msg: "Get Grocerry",
+        msg: "Make Tasks App",
         completed: false
     },
     {
         id: 5,
-        msg: "Get Grocerry",
-        completed: false
+        msg: "Do Workout",
+        completed: true
     }
 ];
 
