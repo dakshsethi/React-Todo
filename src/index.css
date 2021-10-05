@@ -112,4 +112,38 @@ body {
 .add__btn .plus:hover {
   background-color: #2ea55b;
 }
+
+.tasks__list {
+  width: 100%;
+  min-height: 250px;
+  max-height: 400px;
+  padding: 0 20px;
+  margin: 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+.tasks__list .item {
+  width: 90%;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.tasks__list .item:hover {
+  background-color: #e0e0e0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 /*# sourceMappingURL=index.css.map */
