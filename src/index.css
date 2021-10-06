@@ -94,13 +94,11 @@ body {
   width: 100%;
 }
 
-.add__btn .plus {
+.add__btn .plus, .add__btn .back {
   position: fixed;
-  padding: 8px 20px;
   background-color: #6eeb9d;
   color: white;
   font-weight: bold;
-  font-size: 40px;
   text-decoration: none;
   border-radius: 50%;
   right: 47%;
@@ -109,8 +107,18 @@ body {
   transition: background-color 0.3s ease-out;
 }
 
-.add__btn .plus:hover {
+.add__btn .plus:hover, .add__btn .back:hover {
   background-color: #2ea55b;
+}
+
+.add__btn .plus {
+  padding: 8px 20px;
+  font-size: 40px;
+}
+
+.add__btn .back {
+  padding: 12px 21px;
+  font-size: 30px;
 }
 
 .tasks__list {
@@ -173,5 +181,25 @@ body {
   height: 20px;
   border-radius: 50%;
   background: url("./Todo/check-circle-solid.svg");
+}
+
+.add__task {
+  width: 90%;
+  margin: 1em 0 2em;
+}
+
+.add__task input[type=text] {
+  font-family: 'Montserrat';
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 0px 2px;
+  outline: none;
+  border: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-bottom: 2px solid #2e2e2e;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 /*# sourceMappingURL=index.css.map */

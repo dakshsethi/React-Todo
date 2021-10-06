@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const AddButton = () => {
+const AddTick = () => {
     return(
         <div className="add__btn">
             <Link to="/add" className="plus">+</Link>
@@ -8,4 +8,4 @@ const AddButton = () => {
     )
 }
 
-export default AddButton;
+export default AddTick;

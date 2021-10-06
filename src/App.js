@@ -1,24 +1,27 @@
 import CurrentInfo from './Dates/CurrentInfo';
 import Todo from './Todo/Todo';
 import AddButton from './Add/AddButton';
-import { Router, Route, Switch } from "react-router-dom";
-import { createBrowserHistory } from "history";
-const history = createBrowserHistory();
+import AddTick from './Add/AddTick';
+import AddTask from './Add/AddTask';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (
     <div className = "main">
       <div className="heading">all tasks</div>
       <CurrentInfo />
-      <Router history={ history }>
+      <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Todo} />
-          {/* <Route path="/add" component={Profile} /> */}
-          {/* <Route path="/followers" component={Followers} />
-          <Route path="/following" component={Following} /> */}
+          <Route exact path="/">
+            <Todo />
+            <AddButton />
+          </Route>
+          <Route exact path="/add">
+            <AddTask />
+            <AddTick />
+          </Route>
         </Switch>
-      </Router>
-      <AddButton />
+      </BrowserRouter>
       {/* <h1>Hello World!! 🚀🚀</h1>  */}
     </div>
   );
